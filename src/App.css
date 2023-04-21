@@ -17,15 +17,12 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fff
 
 
 
-.main3 {
-  background-color: #7c7c7c;
-  padding: 60px;
+.mint {
+  background-color: #000;
 color: #000;
-  
-background-color: #ffffff;
-opacity: 1;
-background-image: radial-gradient(circle at center center, #eeeeee, #ffffff), repeating-radial-gradient(circle at center center, #eeeeee, #eeeeee, 7px, transparent 14px, transparent 7px);
-background-blend-mode: multiply;}
+margin-top: 100px;
+
+}
 
 
 .main2 {
@@ -172,6 +169,8 @@ table {
 .nft-table {
   border-collapse: collapse;
   width: 310px;
+  color: #000;
+  
   font-size: 14px;
   background-color: #fff; /* set background color to white */
   margin: 0 auto; /* center the table horizontally */

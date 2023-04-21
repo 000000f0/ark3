@@ -3,7 +3,7 @@ import React from 'react';
 const MintPage: React.FC = () => {
   return (
 
-    <div className='main3'>
+    <div className='mint'>
   <center>
     <table className='nft-table'>
       <tbody>
