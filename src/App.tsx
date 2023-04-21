@@ -2,6 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import HomePage from './pages/home_page';
+import AboutPage from './pages/about_page';
+import MintPage from './pages/mint_page';
+import ContactPage from './pages/contact_page';
 
 function App() {
   return (
