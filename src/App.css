@@ -198,7 +198,10 @@ a {
   color: white;
 }
 .banner {
-  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -206,4 +209,46 @@ a {
 .banner iframe {
   display: block;
   margin: 0 auto;
+}
+
+.founders {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  color: #000;
+}
+
+.founders h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.founders-container {
+  display: flex;
+  justify-content: center;
+}
+
+.founders-img {
+  margin: 0 30px;
+  text-align: center;
+}
+
+.founders-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.founders-img h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.founders-img p {
+  font-size: 18px;
+  color: #666;
+}
+.grey_background{
+  background-color: #f2f2f2;
 }
