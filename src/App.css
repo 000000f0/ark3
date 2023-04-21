@@ -8,14 +8,7 @@ body {
   font-family: sans-serif;
 
 }
-main {
-  background-color: #7c7c7c;
-color: #000;
-  padding: 60px;
-background-color: #ffffff;
-opacity: 1;
-background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 10px ), repeating-linear-gradient( #d2d2d255, #d2d2d2 );
-}
+
 
 
 .main_dark_home {
@@ -272,4 +265,22 @@ a {
   .founders-img {
     margin-bottom: 2rem;
   }
+}
+
+.home1 {
+  background-color: #7c7c7c;
+color: #000;
+  padding: 60px;
+  background-color: #ffffff;
+  opacity: 1;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 12px ), repeating-linear-gradient( #d2d2d255, #d2d2d2 );
+}
+
+.home2 {
+  background-color: #7c7c7c;
+color: #000;
+  padding: 60px;
+  background-color: #000000;
+  opacity: 1;
+  background-image:  repeating-radial-gradient( circle at 85px 194px, transparent 0, #000000 12px ), repeating-linear-gradient( #4e4e4e55, #4e4e4e );
 }
