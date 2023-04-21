@@ -52,8 +52,8 @@ function App() {
               </ul>
             <div className="toggle-container" onClick={handleToggle}>
             <div style={{ color: isDarkMode ? '#fff' : '#000' }}>
-              <FontAwesomeIcon icon={isDarkMode ? faToggleOn : faToggleOff} className="icon" />
-              <FontAwesomeIcon icon={isDarkMode ? faMoon : faSun} className="icon" />
+            &nbsp;&nbsp;  <FontAwesomeIcon icon={isDarkMode ? faToggleOn : faToggleOff} className="icon" />
+            &nbsp;&nbsp;  <FontAwesomeIcon icon={isDarkMode ? faMoon : faSun} className="icon" />
             </div>
           </div>
           </nav>
