@@ -21,20 +21,31 @@ const MintPage: React.FC = () => {
         <tr>
           <td className='nft-quantity'>0/100 sold</td>
         </tr>
-        <tr>
-          <td className='nft-description'></td>
-        </tr>
+        
         <tr>
           <td className='nft-button-cell'>
-            <button >BUY NOW</button>
+            <button >Mint</button>
           </td>
         </tr>
         <tr>
-          <td className='nft-button-label'>button</td>
+          <td className='nft-button-cell'>
+            <button >Connect Wallet</button>
+          </td>
         </tr>
         <tr>
-          <td className='nft-text-label'>text</td>
+          <td className='nft-description'>
+
+          No expertise in crypto required to get started.
+*$199 is approximate dependent on Eth Price.
+T&C's Apply. 
+This is not financial advice.
+Maximum 5 NFT's per transaction.
+
+
+
+          </td>
         </tr>
+       
       </tbody>
     </table>
   </center>
