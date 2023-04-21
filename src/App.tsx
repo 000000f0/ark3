@@ -18,7 +18,7 @@ function App() {
             <ul className="nav-links">
             <li>
             <Link to="/">
-            <img height="50px"  src="https://amplify-amplifya785c969872c4-staging-111600-deployment.s3.amazonaws.com/Ark4_new_tmp.jpeg" alt="Logo" />
+            <img height="40px"  src="https://amplify-amplifya785c969872c4-staging-111600-deployment.s3.amazonaws.com/Ark4_new_tmp.jpeg" alt="Logo" />
 
               </Link>
               </li>

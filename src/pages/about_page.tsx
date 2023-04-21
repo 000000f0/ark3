@@ -2,8 +2,8 @@ import React from 'react';
 
 const AboutPage: React.FC = () => {
   return (
-    <main>
-    <div>
+    
+    <div className='main4'>
       <h1>Welcomasdfamy website!</h1>
       <p>Thank you for visiting. Please take a look around and let me know if you have any questions.</p>
 
@@ -29,7 +29,7 @@ const AboutPage: React.FC = () => {
 
 
     </div>
-    </main>
+    
 
 
 
