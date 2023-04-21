@@ -213,3 +213,10 @@ button:active {
   background-color: white;
   color: black;
 }
+.social-icons img, .social-icons i {
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

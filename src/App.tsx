@@ -6,6 +6,8 @@ import HomePage from './pages/home_page';
 import AboutPage from './pages/about_page';
 import MintPage from './pages/mint_page';
 import ContactPage from './pages/contact_page';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 function App() {
@@ -44,13 +46,15 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <footer>
-  <div className="social-icons">
-    <a href="https://www.facebook.com"><img src="https://amplify-amplifya785c969872c4-staging-111600-deployment.s3.amazonaws.com/march16_facebook.png" alt="Facebook" /></a>
-    <a href="https://www.twitter.com"><img src="https://amplify-amplifya785c969872c4-staging-111600-deployment.s3.amazonaws.com/march16_twitter.png" alt="Twitter" /></a>
-    <a href="https://www.instagram.com"><img src="https://amplify-amplifya785c969872c4-staging-111600-deployment.s3.amazonaws.com/march16_instagram.png" alt="Instagram" /></a>
-    <a href="https://www.youtube.com"><img src="https://amplify-amplifya785c969872c4-staging-111600-deployment.s3.amazonaws.com/march16_youtube.png" alt="YouTube" /></a>
-    <a href="https://www.github.com"><img src="https://amplify-amplifya785c969872c4-staging-111600-deployment.s3.amazonaws.com/march16_email.png" alt="GitHub" /></a>
-  </div>
+       
+<div className="social-icons">
+  <a href="https://www.facebook.com"><FontAwesomeIcon icon={faFacebook} /></a>
+  <a href="https://www.twitter.com"><FontAwesomeIcon icon={faTwitter} /></a>
+  <a href="https://www.instagram.com"><FontAwesomeIcon icon={faInstagram} /></a>
+  <a href="https://www.youtube.com"><FontAwesomeIcon icon={faYoutube} /></a>
+  <a href="https://www.github.com"><FontAwesomeIcon icon={faGithub} /></a>
+</div>
+
 </footer>
 
       </div>
