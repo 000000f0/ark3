@@ -264,3 +264,15 @@ a {
 .grey_background{
   background-color: #f2f2f2;
 }
+
+
+@media (max-width: 768px) {
+  .founders-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .founders-img {
+    margin-bottom: 2rem;
+  }
+}
