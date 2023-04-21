@@ -17,10 +17,14 @@ const AboutPage: React.FC<AboutPageProps> = ({ isDark }) => {
   
 </div>
 </center>
-<div className='main4'>
-      <h1>Welcomasdfamy website!</h1>
-      <p>Thank you for visiting. Please take a look around and let me know if you have any questions.</p>
+<div className='main4'  style={{ backgroundImage: isDark ? 'radial-gradient( ellipse farthest-corner at 12px 12px , #0c0c0c, #0c0c0c 50%, #000000 50%)' : 'radial-gradient( ellipse farthest-corner at 12px 12px , #ebebeb, #ebebeb 50%, #ffffff 50%)', color: isDark ? 'white':'black'}}>
+     
 
+     
+     <h1>Welcomasdfamy website!</h1>
+      <p>Thank you for visiting. Please take a look around and let me know if you have any questions.</p>
+      
+      
 
       <h1 ></h1>
       <p >There are problems in the world which communities are solving in their own way.
