@@ -17,7 +17,7 @@ const ContactPage: React.FC = () => {
       <td><textarea placeholder="Message"></textarea></td>
     </tr>
     <tr>
-      <td><button className="contact-button">Contact Us</button><br /></td>
+      <td><button >Contact Us</button><br /></td>
     </tr>
   </tbody>
 </table>

@@ -26,7 +26,7 @@ const MintPage: React.FC = () => {
         </tr>
         <tr>
           <td className='nft-button-cell'>
-            <button className="buy-now-button">BUY NOW</button>
+            <button >BUY NOW</button>
           </td>
         </tr>
         <tr>
