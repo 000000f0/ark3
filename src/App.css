@@ -1,9 +1,12 @@
+
+
+
+
 body {
   margin-top: 50px;
   padding: 0;
-  background-color: #000;
-  color: #ffffff;
   font-family: sans-serif;
+
 }
 main {
   background-color: #7c7c7c;
@@ -15,7 +18,14 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fff
 }
 
 
-
+.main_dark_home {
+  background-color: #000000;
+color: #fff;
+  padding: 60px;
+  background-color: #000000;
+  opacity: 1;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 11px ), repeating-linear-gradient( #ffffff55, #ffffff );
+}
 
 .mint {
   background-color: #000;
@@ -45,6 +55,8 @@ opacity: 1;
 background-image: radial-gradient( ellipse farthest-corner at 12px 12px , #f7f7f7, #f7f7f7 50%, #ffffff 50%);
 background-size: 12px 12px;
 }
+
+
 
 nav {
   position: fixed;

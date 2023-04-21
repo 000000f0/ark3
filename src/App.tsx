@@ -3,59 +3,89 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/home_page';
+import HomePageBlack from './pages/home_page_black';
+
 import AboutPage from './pages/about_page';
 import MintPage from './pages/mint_page';
 import ContactPage from './pages/contact_page';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faToggleOff, faToggleOn } from '@fortawesome/free-solid-svg-icons';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const handleToggle = () => {
+    setIsDarkMode(!isDarkMode);
+    document.body.style.backgroundColor = isDarkMode ? "#fff" : "#000";
+  };
+
   return (
     <Router>
-      <div className="App">
-        <header>
-          <nav>
+      <div  style={{ background: isDarkMode ? '#000' : '#fff' }}>
+      <header  >
+        <nav style={{ background: isDarkMode ? '#000' : '#fff' }}>
+         
             
             <ul className="nav-links">
             <li>
             <Link to="/">
-            <img height="40px"  src="https://amplify-amplifya785c969872c4-staging-111600-deployment.s3.amazonaws.com/Ark4_new_tmp.jpeg" alt="Logo" />
-
+            <img height="40px" src={isDarkMode ? "https://amplify-amplifya785c969872c4-staging-111600-deployment.s3.amazonaws.com/logo_dark.jpg" : "https://amplify-amplifya785c969872c4-staging-111600-deployment.s3.amazonaws.com/logo_light.jpg"} alt="Logo" />
+          
               </Link>
               </li>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" style={{ color: isDarkMode ? '#FFFFFF' : '#000000' }}>Home</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about" style={{ color: isDarkMode ? '#FFFFFF' : '#000000' }}>About</Link>
               </li>
               <li>
-                <Link to="/mint">Mint</Link>
+                <Link to="/mint" style={{ color: isDarkMode ? '#FFFFFF' : '#000000' }}>Mint</Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" style={{ color: isDarkMode ? '#FFFFFF' : '#000000' }}>Contact</Link>
               </li>
+            <li>
+            <div className="toggle-container" onClick={handleToggle}>
+            <div style={{ color: isDarkMode ? '#fff' : '#000' }}>
+              <FontAwesomeIcon icon={isDarkMode ? faToggleOn : faToggleOff} className="icon" />
+              <FontAwesomeIcon icon={isDarkMode ? faMoon : faSun} className="icon" />
+            </div>
+          </div>
+          </li>
             </ul>
           </nav>
         </header>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePageBlack />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/mint" element={<MintPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
-        <footer>
+        <footer  style={{ background: isDarkMode ? '#000' : '#fff' }}>
+        <div className="social-icons">
+          <a href="/" style={{ color: isDarkMode ? '#FFFFFF' : '#000000' }}>
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a href="/" style={{ color: isDarkMode ? '#FFFFFF' : '#000000' }}>
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a href="/" style={{ color: isDarkMode ? '#FFFFFF' : '#000000' }}>
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="/" style={{ color: isDarkMode ? '#FFFFFF' : '#000000' }}>
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+          <a href="/" style={{ color: isDarkMode ? '#FFFFFF' : '#000000' }}>
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </div>
        
-<div className="social-icons">
-  <a href="https://www.facebook.com"><FontAwesomeIcon icon={faFacebook} /></a>
-  <a href="https://www.twitter.com"><FontAwesomeIcon icon={faTwitter} /></a>
-  <a href="https://www.instagram.com"><FontAwesomeIcon icon={faInstagram} /></a>
-  <a href="https://www.youtube.com"><FontAwesomeIcon icon={faYoutube} /></a>
-  <a href="https://www.github.com"><FontAwesomeIcon icon={faGithub} /></a>
-</div>
-
-</footer>
+      </footer>
 
       </div>
     </Router>
