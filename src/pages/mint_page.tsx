@@ -10,7 +10,7 @@ const MintPage: React.FC<MintPageProps> = ({ isDark }) => {
 
     <div className='mint' style={{ backgroundColor: isDark ? '#000' : '#fff'}}>
   <center>
-    <table className='nft-table' style={{ backgroundColor: isDark ? '#000' : '#fff', border: isDark ? '1px solid white':'1px solid black'}}>
+    <table className='nft-table' style={{ backgroundColor: isDark ? '#000' : '#fff', border: isDark ? '1px solid white':'1px solid black', boxShadow: !isDark ?  '0 0 10px rgba(0, 0, 0, 0.5)':'0 0 10px rgba(255, 255, 255, 0.5)'}}>
       <tbody>
         <tr>
           <td>Pugly, the pug</td>
