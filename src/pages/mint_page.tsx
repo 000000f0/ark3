@@ -1,11 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const MintPage: React.FC = () => {
+type MintPageProps = {
+  isDark: boolean;
+};
+
+const MintPage: React.FC<MintPageProps> = ({ isDark }) => {
   return (
 
-    <div className='mint'>
+    <div className='mint' style={{ backgroundColor: isDark ? '#000' : '#fff'}}>
   <center>
-    <table className='nft-table'>
+    <table className='nft-table' style={{ backgroundColor: isDark ? '#000' : '#fff', border: isDark ? '1px solid white':'1px solid black'}}>
       <tbody>
         <tr>
           <td>Pugly, the pug</td>

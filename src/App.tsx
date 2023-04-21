@@ -3,8 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/home_page';
-import HomePageBlack from './pages/home_page_black';
-
 import AboutPage from './pages/about_page';
 import MintPage from './pages/mint_page';
 import ContactPage from './pages/contact_page';
@@ -59,11 +57,12 @@ function App() {
           </nav>
         </header>
         <Routes>
-          <Route path="/" element={<HomePageBlack />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/mint" element={<MintPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
+  <Route path="/" element={<HomePage isDark={isDarkMode} />} />
+  <Route path="/about" element={<AboutPage isDark={isDarkMode} />} />
+  <Route path="/mint" element={<MintPage isDark={isDarkMode} />} />
+  <Route path="/contact" element={<ContactPage isDark={isDarkMode} />} />
+</Routes>
+
         <footer  style={{ background: isDarkMode ? '#000' : '#fff' }}>
         <div className="social-icons">
           <a href="/" style={{ color: isDarkMode ? '#FFFFFF' : '#000000' }}>

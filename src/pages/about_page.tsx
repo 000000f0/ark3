@@ -1,6 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const AboutPage: React.FC = () => {
+type AboutPageProps = {
+  isDark: boolean;
+};
+
+const AboutPage: React.FC<AboutPageProps> = ({ isDark }) => {
   return (
     
     
