@@ -58,8 +58,8 @@ We are taking action
 
   </div>
 
-  <div className='main4'  style={{ backgroundImage:'url("https://amplify-amplifya785c969872c4-staging-111600-deployment.s3.amazonaws.com/vision_render1.jpg")' , background: 'no-repeat', backgroundSize: "cover",
-  backgroundPosition: "center",backgroundColor: isDark ? '#000' : '#fff', color: isDark ? 'white':'black' ,textShadow:  isDark ? '0 0 1px #000, 0 0 2px #000, 0 0 3px #000, 0 0 4px #000'
+  <div className='main4'  style={{ background:'url("https://amplify-amplifya785c969872c4-staging-111600-deployment.s3.amazonaws.com/vision_render1.jpg")' ,  backgroundSize: "cover",
+  backgroundPosition: "center", color: isDark ? 'white':'black' ,textShadow:  isDark ? '0 0 1px #000, 0 0 2px #000, 0 0 3px #000, 0 0 4px #000'
   :'0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff'}}>
 
 
